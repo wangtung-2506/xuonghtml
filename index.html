@@ -21,6 +21,7 @@
                     <a href="" class="header__logo">
                         <img src="./assets/logo.svg" alt="" />
                     </a>
+                    <div class="button-mobile"><button>=</button></div>
                     <nav class="main-menu">
                         <ul class="main-menu__list">
                             <li class="main-menu__item">
@@ -39,16 +40,16 @@
                     </nav>
                     <div class="header-items">
                         <div class="header-item-user">
-                            <span>User</span>
+                            <span><img src="./assets/icons/1.svg" /></span>
                         </div>
                         <div class="header-item-user">
-                            <span>Search</span>
+                            <span><img src="./assets/icons/2.svg" /></span>
                         </div>
                         <div class="header-item-user">
-                            <span>Cart</span>
+                            <span><img src="./assets/icons/3.svg" /></span>
                         </div>
                         <div class="header-item-user">
-                            <span>Wishlist</span>
+                            <span><img src="./assets/icons/4.svg" /></span>
                         </div>
                     </div>
                 </div>
@@ -72,6 +73,7 @@
                                     alt=""
                                     class="product__thumbnail"
                                 />
+                                <span class="product-sale">30%</span>
                             </div>
                             <div class="product-info">
                                 <h3 class="product__name">
@@ -101,6 +103,7 @@
                                     alt=""
                                     class="product__thumbnail"
                                 />
+                                <span class="product-new">New</span>
                             </div>
                             <div class="product-info">
                                 <h3 class="product__name">
@@ -185,6 +188,9 @@
                 </div>
             </div>
         </section>
+        <div class="container">
+            <hr />
+        </div>
         <!--End .news-->
         <section class="shop">
             <div class="container">
@@ -232,7 +238,7 @@
         <!--End .shop-->
         <section class="blog">
             <div class="container">
-                <div class="section-heading">
+                <div class="section-heading section-blog-heading">
                     <h2 class="section-heading__title">Blog</h2>
                 </div>
                 <div class="section-body">
@@ -295,7 +301,7 @@
             <div class="container-fluid">
                 <div class="service-list">
                     <div class="service-item">
-                        <img src="" class="service__image" />
+                        <img src="./assets/icons/10.svg" class="service__image" />
                         <div class="service-info">
                             <h4 class="service__name">High Quality</h4>
                             <p class="service__description">crafted from top materials</p>
@@ -303,7 +309,7 @@
                     </div>
                     <!--End service-item-->
                     <div class="service-item">
-                        <img src="" class="service__image" />
+                        <img src="./assets/icons/11.svg" class="service__image" />
                         <div class="service-info">
                             <h4 class="service__name">High Quality</h4>
                             <p class="service__description">crafted from top materials</p>
@@ -311,7 +317,7 @@
                     </div>
                     <!--End service-item-->
                     <div class="service-item">
-                        <img src="" class="service__image" />
+                        <img src="./assets/icons/12.svg" class="service__image" />
                         <div class="service-info">
                             <h4 class="service__name">High Quality</h4>
                             <p class="service__description">crafted from top materials</p>
@@ -319,7 +325,7 @@
                     </div>
                     <!--End service-item-->
                     <div class="service-item">
-                        <img src="" class="service__image" />
+                        <img src="./assets/icons/13.svg" class="service__image" />
                         <div class="service-info">
                             <h4 class="service__name">High Quality</h4>
                             <p class="service__description">crafted from top materials</p>
@@ -330,49 +336,53 @@
             </div>
         </section>
         <!--End .services-->
-        <footer>
+        <footer class="footer">
             <div class="container">
                 <div class="footer-list">
                     <div class="footer-item">
                         <img src="./assets/logo.svg" alt="" />
-                        <p>400 University Drive Suite 200 Coral Gables, FL 33134 USA</p>
+                        <p class="footer__address">
+                            400 University Drive Suite 200 Coral Gables, FL 33134 USA
+                        </p>
+                    </div>
+                    <div class="footer-nav">
+                        <div class="footer-item">
+                            <h2 class="footer__title">Links</h2>
+                            <ul class="footer-menu-list">
+                                <li class="footer-menu-item">
+                                    <a href="" class="footer-menu-link">Home</a>
+                                </li>
+                                <li class="footer-menu-item">
+                                    <a href="" class="footer-menu-link">Shop</a>
+                                </li>
+                                <li class="footer-menu-item">
+                                    <a href="" class="footer-menu-link">Blog</a>
+                                </li>
+                                <li class="footer-menu-item">
+                                    <a href="" class="footer-menu-link">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-item">
+                            <h2 class="footer__title">Help</h2>
+                            <ul class="footer-menu-list">
+                                <li class="footer-menu-item">
+                                    <a href="" class="footer-menu-link">Payment Options</a>
+                                </li>
+                                <li class="footer-menu-item">
+                                    <a href="" class="footer-menu-link">Returns</a>
+                                </li>
+                                <li class="footer-menu-item">
+                                    <a href="" class="footer-menu-link">Privacy Policies</a>
+                                </li>
+                                <li class="footer-menu-item">
+                                    <a href="" class="footer-menu-link">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="footer-item">
-                        <h2>Links</h2>
-                        <ul class="footer-menu-list">
-                            <li class="footer-menu-item">
-                                <a href="" class="footer-menu-link">Home</a>
-                            </li>
-                            <li class="footer-menu-item">
-                                <a href="" class="footer-menu-link">Shop</a>
-                            </li>
-                            <li class="footer-menu-item">
-                                <a href="" class="footer-menu-link">Blog</a>
-                            </li>
-                            <li class="footer-menu-item">
-                                <a href="" class="footer-menu-link">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer-item">
-                        <h2>Help</h2>
-                        <ul class="footer-menu-list">
-                            <li class="footer-menu-item">
-                                <a href="" class="footer-menu-link">Payment Options</a>
-                            </li>
-                            <li class="footer-menu-item">
-                                <a href="" class="footer-menu-link">Returns</a>
-                            </li>
-                            <li class="footer-menu-item">
-                                <a href="" class="footer-menu-link">Privacy Policies</a>
-                            </li>
-                            <li class="footer-menu-item">
-                                <a href="" class="footer-menu-link">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer-item">
-                        <h2>Newsletter</h2>
+                        <h2 class="footer__title">Newsletter</h2>
                         <form action="" class="newsletter">
                             <input
                                 type="text"
