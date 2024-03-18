@@ -483,13 +483,13 @@ img {
 }
 .img-product-des {
   display: flex;
-  justify-content: center; /* Căn giữa theo chiều ngang */
+  justify-content: center; 
   margin: 50px 110px;
 }
 
 .img-product-des img {
-  flex: 1; /* Mỗi ảnh sẽ chiếm một phần đều của không gian */
-  margin: 0 20px; /* Khoảng cách giữa hai ảnh */
+  flex: 1; 
+  margin: 0 20px; 
 }
 .related-products h2 {
   font-size: 36px;
@@ -558,8 +558,8 @@ img {
 
 .billing-details,
 .total-bill {
-  flex: 1; /* Chia đều không gian giữa các cột */
-  /* Bạn có thể thêm các thuộc tính khác tại đây */
+  flex: 1; 
+  
 }
 .content{
   display: grid;
@@ -577,7 +577,7 @@ img {
 }
 
 .mb-3 {
-  margin-bottom: 15px; /* Khoảng cách giữa các thành phần */
+  margin-bottom: 15px; 
 }
 
 .mb-3 label {
@@ -594,7 +594,7 @@ img {
 }
 .mb-3 input[type="text"],
 .mb-3 select {
-    width: 400px; /* Chiều rộng là 400px */
+    width: 400px; 
     padding: 8px;
     border-radius: 5px;
     border: 1px solid #ccc;
@@ -607,9 +607,9 @@ img {
 }
 .login {
   display: flex;
-  justify-content: center; /* Căn giữa theo chiều ngang */
-  align-items: center; /* Căn giữa theo chiều dọc */
-  height: 100vh; /* Để form chiếm toàn bộ chiều cao của màn hình */
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
 }
 
 .form {
@@ -621,7 +621,7 @@ img {
 }
 
 .form h2 {
-  text-align: center; /* Căn giữa các thành phần trong form */
+  text-align: center; 
   margin-bottom: 20px;
   color: rgba(184, 142, 47, 1);
   font-size: 30px;
