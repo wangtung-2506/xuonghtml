@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="./style.scss" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-inner">
+          <a href="index.html" class="header__logo">
+            <img src="./assets/logo.svg" alt="" />
+          </a>
+          <div class="button-mobile"><button>=</button></div>
+          <nav class="main-menu">
+            <ul class="main-menu__list">
+              <li class="main-menu__item">
+                <a href="" class="main-menu__link">Home</a>
+              </li>
+              <li class="main-menu__item">
+                <a href="shop.html" class="main-menu__link">Shop</a>
+              </li>
+              <li class="main-menu__item">
+                <a href="" class="main-menu__link">About</a>
+              </li>
+              <li class="main-menu__item">
+                <a href="" class="main-menu__link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header-items">
+            <div class="header-item-user">
+              <span><a href="login.html"><img src="./assets/icons/1.svg" /></a></span>
+            </div>
+            <div class="header-item-user">
+              <span><img src="./assets/icons/2.svg" /></span>
+            </div>
+            <div class="header-item-user">
+              <span><img src="./assets/icons/3.svg" /></span>
+            </div>
+            <div class="header-item-user">
+              <span><a href="cart.html"><img src="./assets/icons/4.svg" /></a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="banner">
+      <div class="banner__big">
+        <img
+          src="https://picsum.photos/id/10/1440/500"
+          alt=""
+          class="banner__img"
+        />
+        <div class="banner__text">
+          <!-- Đổi tên lớp thành banner__text -->
+          <h1>Cart</h1>
+          <span
+            ><a href="index.html">Home</a> > <a href="cart.html">Cart</a></span
+          >
+        </div>
+      </div>
+    </section>
+    <!--End .banner-->
+
+    <section class="cart" >
+        <div class="table-container" >
+            <table class="table"  >
+                <thead>
+                    <tr style="background-color: rgba(249, 241, 231, 1);">
+                        <th scope="col">#</th>
+                        <th scope="col">Image</th>
+                        <th scope="col">Product</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Subtotal</th>
+                        <th scope="col">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td scope="col">1</td>
+                        <td scope="col"><img src="https://picsum.photos/70/70" alt=""></td>
+                        <td scope="col">Product 1</td>
+                        <td scope="col">$300</td>
+                        <td scope="col"><input type="number" value="0"></td>
+                        <td scope="col">25.000.000đ </td>
+                        <td scope="col"><img src="./assets/icons/delete.svg" alt="" ></td>
+                    </tr>
+                    <tr>
+                        <td scope="col">1</td>
+                        <td scope="col"><img src="https://picsum.photos/70/70" alt=""></td>
+                        <td scope="col">Product 1</td>
+                        <td scope="col">$300</td>
+                        <td scope="col"><input type="number" value="0"></td>
+                        <td scope="col">25.000.000đ </td>
+                        <td scope="col"><img src="./assets/icons/delete.svg" alt="" ></td>
+                    </tr>
+                    <tr>
+                        <td scope="col">1</td>
+                        <td scope="col"><img src="https://picsum.photos/70/70" alt=""></td>
+                        <td scope="col">Product 1</td>
+                        <td scope="col">$300</td>
+                        <td scope="col"><input type="number" value="0"></td>
+                        <td scope="col">25.000.000đ </td>
+                        <td scope="col"><img src="./assets/icons/delete.svg" alt="" ></td>
+                    </tr>
+                    <tr>
+                        <td scope="col">1</td>
+                        <td scope="col"><img src="https://picsum.photos/70/70" alt=""></td>
+                        <td scope="col">Product 1</td>
+                        <td scope="col">$300</td>
+                        <td scope="col"><input type="number" value="0"></td>
+                        <td scope="col">25.000.000đ </td>
+                        <td scope="col"><img src="./assets/icons/delete.svg" alt="" ></td>
+                    </tr>
+                </tbody>
+            </table>
+           
+        </div>
+        <div class="cart-totals" >
+            <h3 style="text-align: center;margin-top: 25px;">Cart Totals</h3>
+            <div class="text" >
+                <h5>Subtotal</h5> 
+                <span>25.000.000đ</span>
+            </div>
+            <br>
+            <div class="text" >
+                <h5>Total</h5> 
+                <span style="margin-left: 30px;">25.000.000đ</span>
+            </div>
+            <br><br><br>
+            <a class="btn btn-primary" href="checkout.html"  >Check out</a>
+        </div>
+    </section>
+
+    <section class="services">
+      <div class="container-fluid">
+        <div class="service-list">
+          <div class="service-item">
+            <img src="./assets/icons/10.svg" class="service__image" />
+            <div class="service-info">
+              <h4 class="service__name">High Quality</h4>
+              <p class="service__description">crafted from top materials</p>
+            </div>
+          </div>
+          <!--End service-item-->
+          <div class="service-item">
+            <img src="./assets/icons/11.svg" class="service__image" />
+            <div class="service-info">
+              <h4 class="service__name">High Quality</h4>
+              <p class="service__description">crafted from top materials</p>
+            </div>
+          </div>
+          <!--End service-item-->
+          <div class="service-item">
+            <img src="./assets/icons/12.svg" class="service__image" />
+            <div class="service-info">
+              <h4 class="service__name">High Quality</h4>
+              <p class="service__description">crafted from top materials</p>
+            </div>
+          </div>
+          <!--End service-item-->
+          <div class="service-item">
+            <img src="./assets/icons/13.svg" class="service__image" />
+            <div class="service-info">
+              <h4 class="service__name">High Quality</h4>
+              <p class="service__description">crafted from top materials</p>
+            </div>
+          </div>
+          <!--End service-item-->
+        </div>
+      </div>
+    </section>
+
+    <!--End .services-->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-list">
+          <div class="footer-item">
+            <img src="./assets/logo.svg" alt="" />
+            <p class="footer__address">
+              400 University Drive Suite 200 Coral Gables, FL 33134 USA
+            </p>
+          </div>
+          <div class="footer-nav">
+            <div class="footer-item">
+              <h2 class="footer__title">Links</h2>
+              <ul class="footer-menu-list">
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Home</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Shop</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Blog</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-item">
+              <h2 class="footer__title">Help</h2>
+              <ul class="footer-menu-list">
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Payment Options</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Returns</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Privacy Policies</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-item">
+            <h2 class="footer__title">Newsletter</h2>
+            <form action="" class="newsletter">
+              <input
+                type="text"
+                class="newsletter__input"
+                placeholder="Enter Your Email Address"
+              />
+              <button class="newsletter__btn">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <p class="copyright">2023 furino. All rights reverved</p>
+      </div>
+    </footer>
+  </body>
+</html>

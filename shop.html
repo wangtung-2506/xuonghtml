@@ -1,0 +1,1376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="./style.scss" />
+    
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-inner">
+          <a href="index.html" class="header__logo">
+            <img src="./assets/logo.svg" alt="" />
+          </a>
+          <div class="button-mobile"><button>=</button></div>
+          <nav class="main-menu">
+            <ul class="main-menu__list">
+              <li class="main-menu__item">
+                <a href="index.html" class="main-menu__link">Home</a>
+              </li>
+              <li class="main-menu__item">
+                <a href="shop.html" class="main-menu__link">Shop</a>
+              </li>
+              <li class="main-menu__item">
+                <a href="" class="main-menu__link">About</a>
+              </li>
+              <li class="main-menu__item">
+                <a href="" class="main-menu__link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header-items">
+            <div class="header-item-user">
+              <span><a href="login.html"><img src="./assets/icons/1.svg" /></a></span>
+            </div>
+            <div class="header-item-user">
+              <span><img src="./assets/icons/2.svg" /></span>
+            </div>
+            <div class="header-item-user">
+              <span><img src="./assets/icons/3.svg" /></span>
+            </div>
+            <div class="header-item-user">
+              <span><a href="cart.html"><img src="./assets/icons/4.svg" /></a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="banner">
+      <div class="banner__big">
+        <img
+          src="https://picsum.photos/id/10/1440/500"
+          alt=""
+          class="banner__img"
+        />
+        <div class="banner__text">
+          <!-- Đổi tên lớp thành banner__text -->
+          <h1>Shop</h1>
+          <span
+            ><a href="index.html">Home</a> > <a href="shop.html">Shop</a></span
+          >
+        </div>
+      </div>
+    </section>
+    <!--End .banner-->
+    <!-- controller-shop -->
+    <section class="controller-shop">
+      <div class="shop-filter">
+        <img src="./assets/icons/filter.svg" alt="" style="padding-right: 20px;" />Filter
+        <img src="./assets/icons/compo.svg" alt="" style="padding-right: 20px;" /><img
+          src="./assets/icons/15.svg"
+          alt=""
+          style="padding-right: 20px;" 
+        />
+        | Showing 1-16 of 32 results
+      </div>
+      <div class="shop-show">
+        <span
+          >Show
+          <button>16</button>
+          Short by <input type="text" value="Default" />
+        </span>
+      </div>
+    </section>
+    <!-- end-controller-shop -->
+
+    <section class="news">
+      <div class="container">
+       <div class="section-heading-shop" style="margin-top: 50px;"></div>
+        <div class="section-body">
+          <div class="product-list">
+            <div class="product-item">
+              <div class="product-image">
+                <img
+                  src="https://picsum.photos/id/10/300/300"
+                  alt=""
+                  class="product__thumbnail"
+                />
+                <span class="product-sale">30%</span>
+              </div>
+              <div class="product-info">
+                <h3 class="product__name">
+                  <a href="" class="product__link">Syltherine</a>
+                </h3>
+                <a href="" class="product__category">Stylish cafe chair</a>
+                <div class="product-price">
+                  <span class="product-price__new">$200</span>
+                  <span class="product-price__old">$300</span>
+                </div>
+              </div>
+              <div class="product-actions">
+                <button class="btn product-action__quickview">
+                  Quick View
+                </button>
+                <button class="btn product-action__addtocart">
+                  Add To Cart
+                </button>
+                <div class="product-actions-more">
+                  <svg
+                    width="12"
+                    height="14"
+                    viewBox="0 0 12 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10 9.66665C9.47467 9.66665 9 9.87331 8.644 10.2046L3.94 7.46665C3.97333 7.31331 4 7.15998 4 6.99998C4 6.83998 3.97333 6.68665 3.94 6.53331L8.64 3.79331C9 4.12665 9.47333 4.33331 10 4.33331C11.1067 4.33331 12 3.43998 12 2.33331C12 1.22665 11.1067 0.333313 10 0.333313C8.89333 0.333313 8 1.22665 8 2.33331C8 2.49331 8.02667 2.64665 8.06 2.79998L3.36 5.53998C3 5.20665 2.52667 4.99998 2 4.99998C0.893333 4.99998 0 5.89331 0 6.99998C0 8.10665 0.893333 8.99998 2 8.99998C2.52667 8.99998 3 8.79331 3.36 8.45998L8.05867 11.2053C8.02112 11.3563 8.00143 11.5111 8 11.6666C8 12.0622 8.1173 12.4489 8.33706 12.7778C8.55682 13.1067 8.86918 13.363 9.23463 13.5144C9.60009 13.6658 10.0022 13.7054 10.3902 13.6282C10.7781 13.551 11.1345 13.3606 11.4142 13.0809C11.6939 12.8012 11.8844 12.4448 11.9616 12.0568C12.0387 11.6689 11.9991 11.2667 11.8478 10.9013C11.6964 10.5358 11.44 10.2235 11.1111 10.0037C10.7822 9.78394 10.3956 9.66665 10 9.66665Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <span class="product-action__share">Share</span>
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.0799 7L11.0799 8L14.5199 4.55L10.9999 1L9.99992 2L11.7999 3.8H1.99992V5.2H11.8199L10.0799 7ZM5.85992 9L4.85992 8L1.41992 11.5L4.90992 15L5.90992 14L4.09992 12.2H13.9999V10.8H4.09992L5.85992 9Z"
+                      fill="white"
+                    />
+                  </svg>
+
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.99973 14.0361C-5.33333 6.66669 3.99999 -1.33331 7.99973 3.72539C12 -1.33331 21.3333 6.66669 7.99973 14.0361Z"
+                      stroke="white"
+                      stroke-width="1.8"
+                    />
+                  </svg>
+                  <span class="product-action__like">Like</span>
+                </div>
+              </div>
+            </div>
+            <!--End .product-item-->
+            <div class="product-item">
+              <div class="product-image">
+                <img
+                  src="https://picsum.photos/id/11/300/300"
+                  alt=""
+                  class="product__thumbnail"
+                />
+                <span class="product-sale">30%</span>
+              </div>
+              <div class="product-info">
+                <h3 class="product__name">
+                  <a href="" class="product__link">Syltherine</a>
+                </h3>
+                <a href="" class="product__category">Stylish cafe chair</a>
+                <div class="product-price">
+                  <span class="product-price__new">$200</span>
+                  <span class="product-price__old">$300</span>
+                </div>
+              </div>
+              <div class="product-actions">
+                <button class="btn product-action__quickview">
+                  Quick View
+                </button>
+                <button class="btn product-action__addtocart">
+                  Add To Cart
+                </button>
+                <div class="product-actions-more">
+                  <svg
+                    width="12"
+                    height="14"
+                    viewBox="0 0 12 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10 9.66665C9.47467 9.66665 9 9.87331 8.644 10.2046L3.94 7.46665C3.97333 7.31331 4 7.15998 4 6.99998C4 6.83998 3.97333 6.68665 3.94 6.53331L8.64 3.79331C9 4.12665 9.47333 4.33331 10 4.33331C11.1067 4.33331 12 3.43998 12 2.33331C12 1.22665 11.1067 0.333313 10 0.333313C8.89333 0.333313 8 1.22665 8 2.33331C8 2.49331 8.02667 2.64665 8.06 2.79998L3.36 5.53998C3 5.20665 2.52667 4.99998 2 4.99998C0.893333 4.99998 0 5.89331 0 6.99998C0 8.10665 0.893333 8.99998 2 8.99998C2.52667 8.99998 3 8.79331 3.36 8.45998L8.05867 11.2053C8.02112 11.3563 8.00143 11.5111 8 11.6666C8 12.0622 8.1173 12.4489 8.33706 12.7778C8.55682 13.1067 8.86918 13.363 9.23463 13.5144C9.60009 13.6658 10.0022 13.7054 10.3902 13.6282C10.7781 13.551 11.1345 13.3606 11.4142 13.0809C11.6939 12.8012 11.8844 12.4448 11.9616 12.0568C12.0387 11.6689 11.9991 11.2667 11.8478 10.9013C11.6964 10.5358 11.44 10.2235 11.1111 10.0037C10.7822 9.78394 10.3956 9.66665 10 9.66665Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <span class="product-action__share">Share</span>
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.0799 7L11.0799 8L14.5199 4.55L10.9999 1L9.99992 2L11.7999 3.8H1.99992V5.2H11.8199L10.0799 7ZM5.85992 9L4.85992 8L1.41992 11.5L4.90992 15L5.90992 14L4.09992 12.2H13.9999V10.8H4.09992L5.85992 9Z"
+                      fill="white"
+                    />
+                  </svg>
+
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.99973 14.0361C-5.33333 6.66669 3.99999 -1.33331 7.99973 3.72539C12 -1.33331 21.3333 6.66669 7.99973 14.0361Z"
+                      stroke="white"
+                      stroke-width="1.8"
+                    />
+                  </svg>
+                  <span class="product-action__like">Like</span>
+                </div>
+              </div>
+            </div>
+            <!--End .product-item-->
+            <div class="product-item">
+              <div class="product-image">
+                <img
+                  src="https://picsum.photos/id/12/300/300"
+                  alt=""
+                  class="product__thumbnail"
+                />
+                <span class="product-sale">30%</span>
+              </div>
+              <div class="product-info">
+                <h3 class="product__name">
+                  <a href="" class="product__link">Syltherine</a>
+                </h3>
+                <a href="" class="product__category">Stylish cafe chair</a>
+                <div class="product-price">
+                  <span class="product-price__new">$200</span>
+                  <span class="product-price__old">$300</span>
+                </div>
+              </div>
+              <div class="product-actions">
+                <button class="btn product-action__quickview">
+                  Quick View
+                </button>
+                <button class="btn product-action__addtocart">
+                  Add To Cart
+                </button>
+                <div class="product-actions-more">
+                  <svg
+                    width="12"
+                    height="14"
+                    viewBox="0 0 12 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10 9.66665C9.47467 9.66665 9 9.87331 8.644 10.2046L3.94 7.46665C3.97333 7.31331 4 7.15998 4 6.99998C4 6.83998 3.97333 6.68665 3.94 6.53331L8.64 3.79331C9 4.12665 9.47333 4.33331 10 4.33331C11.1067 4.33331 12 3.43998 12 2.33331C12 1.22665 11.1067 0.333313 10 0.333313C8.89333 0.333313 8 1.22665 8 2.33331C8 2.49331 8.02667 2.64665 8.06 2.79998L3.36 5.53998C3 5.20665 2.52667 4.99998 2 4.99998C0.893333 4.99998 0 5.89331 0 6.99998C0 8.10665 0.893333 8.99998 2 8.99998C2.52667 8.99998 3 8.79331 3.36 8.45998L8.05867 11.2053C8.02112 11.3563 8.00143 11.5111 8 11.6666C8 12.0622 8.1173 12.4489 8.33706 12.7778C8.55682 13.1067 8.86918 13.363 9.23463 13.5144C9.60009 13.6658 10.0022 13.7054 10.3902 13.6282C10.7781 13.551 11.1345 13.3606 11.4142 13.0809C11.6939 12.8012 11.8844 12.4448 11.9616 12.0568C12.0387 11.6689 11.9991 11.2667 11.8478 10.9013C11.6964 10.5358 11.44 10.2235 11.1111 10.0037C10.7822 9.78394 10.3956 9.66665 10 9.66665Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <span class="product-action__share">Share</span>
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.0799 7L11.0799 8L14.5199 4.55L10.9999 1L9.99992 2L11.7999 3.8H1.99992V5.2H11.8199L10.0799 7ZM5.85992 9L4.85992 8L1.41992 11.5L4.90992 15L5.90992 14L4.09992 12.2H13.9999V10.8H4.09992L5.85992 9Z"
+                      fill="white"
+                    />
+                  </svg>
+
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.99973 14.0361C-5.33333 6.66669 3.99999 -1.33331 7.99973 3.72539C12 -1.33331 21.3333 6.66669 7.99973 14.0361Z"
+                      stroke="white"
+                      stroke-width="1.8"
+                    />
+                  </svg>
+                  <span class="product-action__like">Like</span>
+                </div>
+              </div>
+            </div>
+            <!--End .product-item-->
+            <div class="product-item">
+              <div class="product-image">
+                <img
+                  src="https://picsum.photos/id/13/300/300"
+                  alt=""
+                  class="product__thumbnail"
+                />
+                <span class="product-sale">30%</span>
+              </div>
+              <div class="product-info">
+                <h3 class="product__name">
+                  <a href="" class="product__link">Syltherine</a>
+                </h3>
+                <a href="" class="product__category">Stylish cafe chair</a>
+                <div class="product-price">
+                  <span class="product-price__new">$200</span>
+                  <span class="product-price__old">$300</span>
+                </div>
+              </div>
+              <div class="product-actions">
+                <button class="btn product-action__quickview">
+                  Quick View
+                </button>
+                <button class="btn product-action__addtocart">
+                  Add To Cart
+                </button>
+                <div class="product-actions-more">
+                  <svg
+                    width="12"
+                    height="14"
+                    viewBox="0 0 12 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10 9.66665C9.47467 9.66665 9 9.87331 8.644 10.2046L3.94 7.46665C3.97333 7.31331 4 7.15998 4 6.99998C4 6.83998 3.97333 6.68665 3.94 6.53331L8.64 3.79331C9 4.12665 9.47333 4.33331 10 4.33331C11.1067 4.33331 12 3.43998 12 2.33331C12 1.22665 11.1067 0.333313 10 0.333313C8.89333 0.333313 8 1.22665 8 2.33331C8 2.49331 8.02667 2.64665 8.06 2.79998L3.36 5.53998C3 5.20665 2.52667 4.99998 2 4.99998C0.893333 4.99998 0 5.89331 0 6.99998C0 8.10665 0.893333 8.99998 2 8.99998C2.52667 8.99998 3 8.79331 3.36 8.45998L8.05867 11.2053C8.02112 11.3563 8.00143 11.5111 8 11.6666C8 12.0622 8.1173 12.4489 8.33706 12.7778C8.55682 13.1067 8.86918 13.363 9.23463 13.5144C9.60009 13.6658 10.0022 13.7054 10.3902 13.6282C10.7781 13.551 11.1345 13.3606 11.4142 13.0809C11.6939 12.8012 11.8844 12.4448 11.9616 12.0568C12.0387 11.6689 11.9991 11.2667 11.8478 10.9013C11.6964 10.5358 11.44 10.2235 11.1111 10.0037C10.7822 9.78394 10.3956 9.66665 10 9.66665Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <span class="product-action__share">Share</span>
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.0799 7L11.0799 8L14.5199 4.55L10.9999 1L9.99992 2L11.7999 3.8H1.99992V5.2H11.8199L10.0799 7ZM5.85992 9L4.85992 8L1.41992 11.5L4.90992 15L5.90992 14L4.09992 12.2H13.9999V10.8H4.09992L5.85992 9Z"
+                      fill="white"
+                    />
+                  </svg>
+
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.99973 14.0361C-5.33333 6.66669 3.99999 -1.33331 7.99973 3.72539C12 -1.33331 21.3333 6.66669 7.99973 14.0361Z"
+                      stroke="white"
+                      stroke-width="1.8"
+                    />
+                  </svg>
+                  <span class="product-action__like">Like</span>
+                </div>
+              </div>
+            </div>
+            <!--End .product-item-->
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="news">
+      <div class="container">
+       
+        <div class="section-body">
+          <div class="product-list">
+            <div class="product-item">
+              <div class="product-image">
+                <img
+                  src="https://picsum.photos/id/10/300/300"
+                  alt=""
+                  class="product__thumbnail"
+                />
+                <span class="product-sale">30%</span>
+              </div>
+              <div class="product-info">
+                <h3 class="product__name">
+                  <a href="" class="product__link">Syltherine</a>
+                </h3>
+                <a href="" class="product__category">Stylish cafe chair</a>
+                <div class="product-price">
+                  <span class="product-price__new">$200</span>
+                  <span class="product-price__old">$300</span>
+                </div>
+              </div>
+              <div class="product-actions">
+                <button class="btn product-action__quickview">
+                  Quick View
+                </button>
+                <button class="btn product-action__addtocart">
+                  Add To Cart
+                </button>
+                <div class="product-actions-more">
+                  <svg
+                    width="12"
+                    height="14"
+                    viewBox="0 0 12 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10 9.66665C9.47467 9.66665 9 9.87331 8.644 10.2046L3.94 7.46665C3.97333 7.31331 4 7.15998 4 6.99998C4 6.83998 3.97333 6.68665 3.94 6.53331L8.64 3.79331C9 4.12665 9.47333 4.33331 10 4.33331C11.1067 4.33331 12 3.43998 12 2.33331C12 1.22665 11.1067 0.333313 10 0.333313C8.89333 0.333313 8 1.22665 8 2.33331C8 2.49331 8.02667 2.64665 8.06 2.79998L3.36 5.53998C3 5.20665 2.52667 4.99998 2 4.99998C0.893333 4.99998 0 5.89331 0 6.99998C0 8.10665 0.893333 8.99998 2 8.99998C2.52667 8.99998 3 8.79331 3.36 8.45998L8.05867 11.2053C8.02112 11.3563 8.00143 11.5111 8 11.6666C8 12.0622 8.1173 12.4489 8.33706 12.7778C8.55682 13.1067 8.86918 13.363 9.23463 13.5144C9.60009 13.6658 10.0022 13.7054 10.3902 13.6282C10.7781 13.551 11.1345 13.3606 11.4142 13.0809C11.6939 12.8012 11.8844 12.4448 11.9616 12.0568C12.0387 11.6689 11.9991 11.2667 11.8478 10.9013C11.6964 10.5358 11.44 10.2235 11.1111 10.0037C10.7822 9.78394 10.3956 9.66665 10 9.66665Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <span class="product-action__share">Share</span>
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.0799 7L11.0799 8L14.5199 4.55L10.9999 1L9.99992 2L11.7999 3.8H1.99992V5.2H11.8199L10.0799 7ZM5.85992 9L4.85992 8L1.41992 11.5L4.90992 15L5.90992 14L4.09992 12.2H13.9999V10.8H4.09992L5.85992 9Z"
+                      fill="white"
+                    />
+                  </svg>
+
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.99973 14.0361C-5.33333 6.66669 3.99999 -1.33331 7.99973 3.72539C12 -1.33331 21.3333 6.66669 7.99973 14.0361Z"
+                      stroke="white"
+                      stroke-width="1.8"
+                    />
+                  </svg>
+                  <span class="product-action__like">Like</span>
+                </div>
+              </div>
+            </div>
+            <!--End .product-item-->
+            <div class="product-item">
+              <div class="product-image">
+                <img
+                  src="https://picsum.photos/id/11/300/300"
+                  alt=""
+                  class="product__thumbnail"
+                />
+                <span class="product-sale">30%</span>
+              </div>
+              <div class="product-info">
+                <h3 class="product__name">
+                  <a href="" class="product__link">Syltherine</a>
+                </h3>
+                <a href="" class="product__category">Stylish cafe chair</a>
+                <div class="product-price">
+                  <span class="product-price__new">$200</span>
+                  <span class="product-price__old">$300</span>
+                </div>
+              </div>
+              <div class="product-actions">
+                <button class="btn product-action__quickview">
+                  Quick View
+                </button>
+                <button class="btn product-action__addtocart">
+                  Add To Cart
+                </button>
+                <div class="product-actions-more">
+                  <svg
+                    width="12"
+                    height="14"
+                    viewBox="0 0 12 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10 9.66665C9.47467 9.66665 9 9.87331 8.644 10.2046L3.94 7.46665C3.97333 7.31331 4 7.15998 4 6.99998C4 6.83998 3.97333 6.68665 3.94 6.53331L8.64 3.79331C9 4.12665 9.47333 4.33331 10 4.33331C11.1067 4.33331 12 3.43998 12 2.33331C12 1.22665 11.1067 0.333313 10 0.333313C8.89333 0.333313 8 1.22665 8 2.33331C8 2.49331 8.02667 2.64665 8.06 2.79998L3.36 5.53998C3 5.20665 2.52667 4.99998 2 4.99998C0.893333 4.99998 0 5.89331 0 6.99998C0 8.10665 0.893333 8.99998 2 8.99998C2.52667 8.99998 3 8.79331 3.36 8.45998L8.05867 11.2053C8.02112 11.3563 8.00143 11.5111 8 11.6666C8 12.0622 8.1173 12.4489 8.33706 12.7778C8.55682 13.1067 8.86918 13.363 9.23463 13.5144C9.60009 13.6658 10.0022 13.7054 10.3902 13.6282C10.7781 13.551 11.1345 13.3606 11.4142 13.0809C11.6939 12.8012 11.8844 12.4448 11.9616 12.0568C12.0387 11.6689 11.9991 11.2667 11.8478 10.9013C11.6964 10.5358 11.44 10.2235 11.1111 10.0037C10.7822 9.78394 10.3956 9.66665 10 9.66665Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <span class="product-action__share">Share</span>
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.0799 7L11.0799 8L14.5199 4.55L10.9999 1L9.99992 2L11.7999 3.8H1.99992V5.2H11.8199L10.0799 7ZM5.85992 9L4.85992 8L1.41992 11.5L4.90992 15L5.90992 14L4.09992 12.2H13.9999V10.8H4.09992L5.85992 9Z"
+                      fill="white"
+                    />
+                  </svg>
+
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.99973 14.0361C-5.33333 6.66669 3.99999 -1.33331 7.99973 3.72539C12 -1.33331 21.3333 6.66669 7.99973 14.0361Z"
+                      stroke="white"
+                      stroke-width="1.8"
+                    />
+                  </svg>
+                  <span class="product-action__like">Like</span>
+                </div>
+              </div>
+            </div>
+            <!--End .product-item-->
+            <div class="product-item">
+              <div class="product-image">
+                <img
+                  src="https://picsum.photos/id/12/300/300"
+                  alt=""
+                  class="product__thumbnail"
+                />
+                <span class="product-sale">30%</span>
+              </div>
+              <div class="product-info">
+                <h3 class="product__name">
+                  <a href="" class="product__link">Syltherine</a>
+                </h3>
+                <a href="" class="product__category">Stylish cafe chair</a>
+                <div class="product-price">
+                  <span class="product-price__new">$200</span>
+                  <span class="product-price__old">$300</span>
+                </div>
+              </div>
+              <div class="product-actions">
+                <button class="btn product-action__quickview">
+                  Quick View
+                </button>
+                <button class="btn product-action__addtocart">
+                  Add To Cart
+                </button>
+                <div class="product-actions-more">
+                  <svg
+                    width="12"
+                    height="14"
+                    viewBox="0 0 12 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10 9.66665C9.47467 9.66665 9 9.87331 8.644 10.2046L3.94 7.46665C3.97333 7.31331 4 7.15998 4 6.99998C4 6.83998 3.97333 6.68665 3.94 6.53331L8.64 3.79331C9 4.12665 9.47333 4.33331 10 4.33331C11.1067 4.33331 12 3.43998 12 2.33331C12 1.22665 11.1067 0.333313 10 0.333313C8.89333 0.333313 8 1.22665 8 2.33331C8 2.49331 8.02667 2.64665 8.06 2.79998L3.36 5.53998C3 5.20665 2.52667 4.99998 2 4.99998C0.893333 4.99998 0 5.89331 0 6.99998C0 8.10665 0.893333 8.99998 2 8.99998C2.52667 8.99998 3 8.79331 3.36 8.45998L8.05867 11.2053C8.02112 11.3563 8.00143 11.5111 8 11.6666C8 12.0622 8.1173 12.4489 8.33706 12.7778C8.55682 13.1067 8.86918 13.363 9.23463 13.5144C9.60009 13.6658 10.0022 13.7054 10.3902 13.6282C10.7781 13.551 11.1345 13.3606 11.4142 13.0809C11.6939 12.8012 11.8844 12.4448 11.9616 12.0568C12.0387 11.6689 11.9991 11.2667 11.8478 10.9013C11.6964 10.5358 11.44 10.2235 11.1111 10.0037C10.7822 9.78394 10.3956 9.66665 10 9.66665Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <span class="product-action__share">Share</span>
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.0799 7L11.0799 8L14.5199 4.55L10.9999 1L9.99992 2L11.7999 3.8H1.99992V5.2H11.8199L10.0799 7ZM5.85992 9L4.85992 8L1.41992 11.5L4.90992 15L5.90992 14L4.09992 12.2H13.9999V10.8H4.09992L5.85992 9Z"
+                      fill="white"
+                    />
+                  </svg>
+
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.99973 14.0361C-5.33333 6.66669 3.99999 -1.33331 7.99973 3.72539C12 -1.33331 21.3333 6.66669 7.99973 14.0361Z"
+                      stroke="white"
+                      stroke-width="1.8"
+                    />
+                  </svg>
+                  <span class="product-action__like">Like</span>
+                </div>
+              </div>
+            </div>
+            <!--End .product-item-->
+            <div class="product-item">
+              <div class="product-image">
+                <img
+                  src="https://picsum.photos/id/13/300/300"
+                  alt=""
+                  class="product__thumbnail"
+                />
+                <span class="product-sale">30%</span>
+              </div>
+              <div class="product-info">
+                <h3 class="product__name">
+                  <a href="" class="product__link">Syltherine</a>
+                </h3>
+                <a href="" class="product__category">Stylish cafe chair</a>
+                <div class="product-price">
+                  <span class="product-price__new">$200</span>
+                  <span class="product-price__old">$300</span>
+                </div>
+              </div>
+              <div class="product-actions">
+                <button class="btn product-action__quickview">
+                  Quick View
+                </button>
+                <button class="btn product-action__addtocart">
+                  Add To Cart
+                </button>
+                <div class="product-actions-more">
+                  <svg
+                    width="12"
+                    height="14"
+                    viewBox="0 0 12 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10 9.66665C9.47467 9.66665 9 9.87331 8.644 10.2046L3.94 7.46665C3.97333 7.31331 4 7.15998 4 6.99998C4 6.83998 3.97333 6.68665 3.94 6.53331L8.64 3.79331C9 4.12665 9.47333 4.33331 10 4.33331C11.1067 4.33331 12 3.43998 12 2.33331C12 1.22665 11.1067 0.333313 10 0.333313C8.89333 0.333313 8 1.22665 8 2.33331C8 2.49331 8.02667 2.64665 8.06 2.79998L3.36 5.53998C3 5.20665 2.52667 4.99998 2 4.99998C0.893333 4.99998 0 5.89331 0 6.99998C0 8.10665 0.893333 8.99998 2 8.99998C2.52667 8.99998 3 8.79331 3.36 8.45998L8.05867 11.2053C8.02112 11.3563 8.00143 11.5111 8 11.6666C8 12.0622 8.1173 12.4489 8.33706 12.7778C8.55682 13.1067 8.86918 13.363 9.23463 13.5144C9.60009 13.6658 10.0022 13.7054 10.3902 13.6282C10.7781 13.551 11.1345 13.3606 11.4142 13.0809C11.6939 12.8012 11.8844 12.4448 11.9616 12.0568C12.0387 11.6689 11.9991 11.2667 11.8478 10.9013C11.6964 10.5358 11.44 10.2235 11.1111 10.0037C10.7822 9.78394 10.3956 9.66665 10 9.66665Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <span class="product-action__share">Share</span>
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.0799 7L11.0799 8L14.5199 4.55L10.9999 1L9.99992 2L11.7999 3.8H1.99992V5.2H11.8199L10.0799 7ZM5.85992 9L4.85992 8L1.41992 11.5L4.90992 15L5.90992 14L4.09992 12.2H13.9999V10.8H4.09992L5.85992 9Z"
+                      fill="white"
+                    />
+                  </svg>
+
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.99973 14.0361C-5.33333 6.66669 3.99999 -1.33331 7.99973 3.72539C12 -1.33331 21.3333 6.66669 7.99973 14.0361Z"
+                      stroke="white"
+                      stroke-width="1.8"
+                    />
+                  </svg>
+                  <span class="product-action__like">Like</span>
+                </div>
+              </div>
+            </div>
+            <!--End .product-item-->
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="news">
+      <div class="container">
+        <div class="section-heading-shop"></div>
+        <div class="section-body">
+          <div class="product-list">
+            <div class="product-item">
+              <div class="product-image">
+                <img
+                  src="https://picsum.photos/id/10/300/300"
+                  alt=""
+                  class="product__thumbnail"
+                />
+                <span class="product-sale">30%</span>
+              </div>
+              <div class="product-info">
+                <h3 class="product__name">
+                  <a href="" class="product__link">Syltherine</a>
+                </h3>
+                <a href="" class="product__category">Stylish cafe chair</a>
+                <div class="product-price">
+                  <span class="product-price__new">$200</span>
+                  <span class="product-price__old">$300</span>
+                </div>
+              </div>
+              <div class="product-actions">
+                <button class="btn product-action__quickview">
+                  Quick View
+                </button>
+                <button class="btn product-action__addtocart">
+                  Add To Cart
+                </button>
+                <div class="product-actions-more">
+                  <svg
+                    width="12"
+                    height="14"
+                    viewBox="0 0 12 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10 9.66665C9.47467 9.66665 9 9.87331 8.644 10.2046L3.94 7.46665C3.97333 7.31331 4 7.15998 4 6.99998C4 6.83998 3.97333 6.68665 3.94 6.53331L8.64 3.79331C9 4.12665 9.47333 4.33331 10 4.33331C11.1067 4.33331 12 3.43998 12 2.33331C12 1.22665 11.1067 0.333313 10 0.333313C8.89333 0.333313 8 1.22665 8 2.33331C8 2.49331 8.02667 2.64665 8.06 2.79998L3.36 5.53998C3 5.20665 2.52667 4.99998 2 4.99998C0.893333 4.99998 0 5.89331 0 6.99998C0 8.10665 0.893333 8.99998 2 8.99998C2.52667 8.99998 3 8.79331 3.36 8.45998L8.05867 11.2053C8.02112 11.3563 8.00143 11.5111 8 11.6666C8 12.0622 8.1173 12.4489 8.33706 12.7778C8.55682 13.1067 8.86918 13.363 9.23463 13.5144C9.60009 13.6658 10.0022 13.7054 10.3902 13.6282C10.7781 13.551 11.1345 13.3606 11.4142 13.0809C11.6939 12.8012 11.8844 12.4448 11.9616 12.0568C12.0387 11.6689 11.9991 11.2667 11.8478 10.9013C11.6964 10.5358 11.44 10.2235 11.1111 10.0037C10.7822 9.78394 10.3956 9.66665 10 9.66665Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <span class="product-action__share">Share</span>
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.0799 7L11.0799 8L14.5199 4.55L10.9999 1L9.99992 2L11.7999 3.8H1.99992V5.2H11.8199L10.0799 7ZM5.85992 9L4.85992 8L1.41992 11.5L4.90992 15L5.90992 14L4.09992 12.2H13.9999V10.8H4.09992L5.85992 9Z"
+                      fill="white"
+                    />
+                  </svg>
+
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.99973 14.0361C-5.33333 6.66669 3.99999 -1.33331 7.99973 3.72539C12 -1.33331 21.3333 6.66669 7.99973 14.0361Z"
+                      stroke="white"
+                      stroke-width="1.8"
+                    />
+                  </svg>
+                  <span class="product-action__like">Like</span>
+                </div>
+              </div>
+            </div>
+            <!--End .product-item-->
+            <div class="product-item">
+              <div class="product-image">
+                <img
+                  src="https://picsum.photos/id/11/300/300"
+                  alt=""
+                  class="product__thumbnail"
+                />
+                <span class="product-sale">30%</span>
+              </div>
+              <div class="product-info">
+                <h3 class="product__name">
+                  <a href="" class="product__link">Syltherine</a>
+                </h3>
+                <a href="" class="product__category">Stylish cafe chair</a>
+                <div class="product-price">
+                  <span class="product-price__new">$200</span>
+                  <span class="product-price__old">$300</span>
+                </div>
+              </div>
+              <div class="product-actions">
+                <button class="btn product-action__quickview">
+                  Quick View
+                </button>
+                <button class="btn product-action__addtocart">
+                  Add To Cart
+                </button>
+                <div class="product-actions-more">
+                  <svg
+                    width="12"
+                    height="14"
+                    viewBox="0 0 12 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10 9.66665C9.47467 9.66665 9 9.87331 8.644 10.2046L3.94 7.46665C3.97333 7.31331 4 7.15998 4 6.99998C4 6.83998 3.97333 6.68665 3.94 6.53331L8.64 3.79331C9 4.12665 9.47333 4.33331 10 4.33331C11.1067 4.33331 12 3.43998 12 2.33331C12 1.22665 11.1067 0.333313 10 0.333313C8.89333 0.333313 8 1.22665 8 2.33331C8 2.49331 8.02667 2.64665 8.06 2.79998L3.36 5.53998C3 5.20665 2.52667 4.99998 2 4.99998C0.893333 4.99998 0 5.89331 0 6.99998C0 8.10665 0.893333 8.99998 2 8.99998C2.52667 8.99998 3 8.79331 3.36 8.45998L8.05867 11.2053C8.02112 11.3563 8.00143 11.5111 8 11.6666C8 12.0622 8.1173 12.4489 8.33706 12.7778C8.55682 13.1067 8.86918 13.363 9.23463 13.5144C9.60009 13.6658 10.0022 13.7054 10.3902 13.6282C10.7781 13.551 11.1345 13.3606 11.4142 13.0809C11.6939 12.8012 11.8844 12.4448 11.9616 12.0568C12.0387 11.6689 11.9991 11.2667 11.8478 10.9013C11.6964 10.5358 11.44 10.2235 11.1111 10.0037C10.7822 9.78394 10.3956 9.66665 10 9.66665Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <span class="product-action__share">Share</span>
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.0799 7L11.0799 8L14.5199 4.55L10.9999 1L9.99992 2L11.7999 3.8H1.99992V5.2H11.8199L10.0799 7ZM5.85992 9L4.85992 8L1.41992 11.5L4.90992 15L5.90992 14L4.09992 12.2H13.9999V10.8H4.09992L5.85992 9Z"
+                      fill="white"
+                    />
+                  </svg>
+
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.99973 14.0361C-5.33333 6.66669 3.99999 -1.33331 7.99973 3.72539C12 -1.33331 21.3333 6.66669 7.99973 14.0361Z"
+                      stroke="white"
+                      stroke-width="1.8"
+                    />
+                  </svg>
+                  <span class="product-action__like">Like</span>
+                </div>
+              </div>
+            </div>
+            <!--End .product-item-->
+            <div class="product-item">
+              <div class="product-image">
+                <img
+                  src="https://picsum.photos/id/12/300/300"
+                  alt=""
+                  class="product__thumbnail"
+                />
+                <span class="product-sale">30%</span>
+              </div>
+              <div class="product-info">
+                <h3 class="product__name">
+                  <a href="" class="product__link">Syltherine</a>
+                </h3>
+                <a href="" class="product__category">Stylish cafe chair</a>
+                <div class="product-price">
+                  <span class="product-price__new">$200</span>
+                  <span class="product-price__old">$300</span>
+                </div>
+              </div>
+              <div class="product-actions">
+                <button class="btn product-action__quickview">
+                  Quick View
+                </button>
+                <button class="btn product-action__addtocart">
+                  Add To Cart
+                </button>
+                <div class="product-actions-more">
+                  <svg
+                    width="12"
+                    height="14"
+                    viewBox="0 0 12 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10 9.66665C9.47467 9.66665 9 9.87331 8.644 10.2046L3.94 7.46665C3.97333 7.31331 4 7.15998 4 6.99998C4 6.83998 3.97333 6.68665 3.94 6.53331L8.64 3.79331C9 4.12665 9.47333 4.33331 10 4.33331C11.1067 4.33331 12 3.43998 12 2.33331C12 1.22665 11.1067 0.333313 10 0.333313C8.89333 0.333313 8 1.22665 8 2.33331C8 2.49331 8.02667 2.64665 8.06 2.79998L3.36 5.53998C3 5.20665 2.52667 4.99998 2 4.99998C0.893333 4.99998 0 5.89331 0 6.99998C0 8.10665 0.893333 8.99998 2 8.99998C2.52667 8.99998 3 8.79331 3.36 8.45998L8.05867 11.2053C8.02112 11.3563 8.00143 11.5111 8 11.6666C8 12.0622 8.1173 12.4489 8.33706 12.7778C8.55682 13.1067 8.86918 13.363 9.23463 13.5144C9.60009 13.6658 10.0022 13.7054 10.3902 13.6282C10.7781 13.551 11.1345 13.3606 11.4142 13.0809C11.6939 12.8012 11.8844 12.4448 11.9616 12.0568C12.0387 11.6689 11.9991 11.2667 11.8478 10.9013C11.6964 10.5358 11.44 10.2235 11.1111 10.0037C10.7822 9.78394 10.3956 9.66665 10 9.66665Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <span class="product-action__share">Share</span>
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.0799 7L11.0799 8L14.5199 4.55L10.9999 1L9.99992 2L11.7999 3.8H1.99992V5.2H11.8199L10.0799 7ZM5.85992 9L4.85992 8L1.41992 11.5L4.90992 15L5.90992 14L4.09992 12.2H13.9999V10.8H4.09992L5.85992 9Z"
+                      fill="white"
+                    />
+                  </svg>
+
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.99973 14.0361C-5.33333 6.66669 3.99999 -1.33331 7.99973 3.72539C12 -1.33331 21.3333 6.66669 7.99973 14.0361Z"
+                      stroke="white"
+                      stroke-width="1.8"
+                    />
+                  </svg>
+                  <span class="product-action__like">Like</span>
+                </div>
+              </div>
+            </div>
+            <!--End .product-item-->
+            <div class="product-item">
+              <div class="product-image">
+                <img
+                  src="https://picsum.photos/id/13/300/300"
+                  alt=""
+                  class="product__thumbnail"
+                />
+                <span class="product-sale">30%</span>
+              </div>
+              <div class="product-info">
+                <h3 class="product__name">
+                  <a href="" class="product__link">Syltherine</a>
+                </h3>
+                <a href="" class="product__category">Stylish cafe chair</a>
+                <div class="product-price">
+                  <span class="product-price__new">$200</span>
+                  <span class="product-price__old">$300</span>
+                </div>
+              </div>
+              <div class="product-actions">
+                <button class="btn product-action__quickview">
+                  Quick View
+                </button>
+                <button class="btn product-action__addtocart">
+                  Add To Cart
+                </button>
+                <div class="product-actions-more">
+                  <svg
+                    width="12"
+                    height="14"
+                    viewBox="0 0 12 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10 9.66665C9.47467 9.66665 9 9.87331 8.644 10.2046L3.94 7.46665C3.97333 7.31331 4 7.15998 4 6.99998C4 6.83998 3.97333 6.68665 3.94 6.53331L8.64 3.79331C9 4.12665 9.47333 4.33331 10 4.33331C11.1067 4.33331 12 3.43998 12 2.33331C12 1.22665 11.1067 0.333313 10 0.333313C8.89333 0.333313 8 1.22665 8 2.33331C8 2.49331 8.02667 2.64665 8.06 2.79998L3.36 5.53998C3 5.20665 2.52667 4.99998 2 4.99998C0.893333 4.99998 0 5.89331 0 6.99998C0 8.10665 0.893333 8.99998 2 8.99998C2.52667 8.99998 3 8.79331 3.36 8.45998L8.05867 11.2053C8.02112 11.3563 8.00143 11.5111 8 11.6666C8 12.0622 8.1173 12.4489 8.33706 12.7778C8.55682 13.1067 8.86918 13.363 9.23463 13.5144C9.60009 13.6658 10.0022 13.7054 10.3902 13.6282C10.7781 13.551 11.1345 13.3606 11.4142 13.0809C11.6939 12.8012 11.8844 12.4448 11.9616 12.0568C12.0387 11.6689 11.9991 11.2667 11.8478 10.9013C11.6964 10.5358 11.44 10.2235 11.1111 10.0037C10.7822 9.78394 10.3956 9.66665 10 9.66665Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <span class="product-action__share">Share</span>
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.0799 7L11.0799 8L14.5199 4.55L10.9999 1L9.99992 2L11.7999 3.8H1.99992V5.2H11.8199L10.0799 7ZM5.85992 9L4.85992 8L1.41992 11.5L4.90992 15L5.90992 14L4.09992 12.2H13.9999V10.8H4.09992L5.85992 9Z"
+                      fill="white"
+                    />
+                  </svg>
+
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.99973 14.0361C-5.33333 6.66669 3.99999 -1.33331 7.99973 3.72539C12 -1.33331 21.3333 6.66669 7.99973 14.0361Z"
+                      stroke="white"
+                      stroke-width="1.8"
+                    />
+                  </svg>
+                  <span class="product-action__like">Like</span>
+                </div>
+              </div>
+            </div>
+            <!--End .product-item-->
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="news">
+      <div class="container">
+       
+        <div class="section-body">
+          <div class="product-list">
+            <div class="product-item">
+              <div class="product-image">
+                <img
+                  src="https://picsum.photos/id/10/300/300"
+                  alt=""
+                  class="product__thumbnail"
+                />
+                <span class="product-sale">30%</span>
+              </div>
+              <div class="product-info">
+                <h3 class="product__name">
+                  <a href="" class="product__link">Syltherine</a>
+                </h3>
+                <a href="" class="product__category">Stylish cafe chair</a>
+                <div class="product-price">
+                  <span class="product-price__new">$200</span>
+                  <span class="product-price__old">$300</span>
+                </div>
+              </div>
+              <div class="product-actions">
+                <button class="btn product-action__quickview">
+                  Quick View
+                </button>
+                <button class="btn product-action__addtocart">
+                  Add To Cart
+                </button>
+                <div class="product-actions-more">
+                  <svg
+                    width="12"
+                    height="14"
+                    viewBox="0 0 12 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10 9.66665C9.47467 9.66665 9 9.87331 8.644 10.2046L3.94 7.46665C3.97333 7.31331 4 7.15998 4 6.99998C4 6.83998 3.97333 6.68665 3.94 6.53331L8.64 3.79331C9 4.12665 9.47333 4.33331 10 4.33331C11.1067 4.33331 12 3.43998 12 2.33331C12 1.22665 11.1067 0.333313 10 0.333313C8.89333 0.333313 8 1.22665 8 2.33331C8 2.49331 8.02667 2.64665 8.06 2.79998L3.36 5.53998C3 5.20665 2.52667 4.99998 2 4.99998C0.893333 4.99998 0 5.89331 0 6.99998C0 8.10665 0.893333 8.99998 2 8.99998C2.52667 8.99998 3 8.79331 3.36 8.45998L8.05867 11.2053C8.02112 11.3563 8.00143 11.5111 8 11.6666C8 12.0622 8.1173 12.4489 8.33706 12.7778C8.55682 13.1067 8.86918 13.363 9.23463 13.5144C9.60009 13.6658 10.0022 13.7054 10.3902 13.6282C10.7781 13.551 11.1345 13.3606 11.4142 13.0809C11.6939 12.8012 11.8844 12.4448 11.9616 12.0568C12.0387 11.6689 11.9991 11.2667 11.8478 10.9013C11.6964 10.5358 11.44 10.2235 11.1111 10.0037C10.7822 9.78394 10.3956 9.66665 10 9.66665Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <span class="product-action__share">Share</span>
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.0799 7L11.0799 8L14.5199 4.55L10.9999 1L9.99992 2L11.7999 3.8H1.99992V5.2H11.8199L10.0799 7ZM5.85992 9L4.85992 8L1.41992 11.5L4.90992 15L5.90992 14L4.09992 12.2H13.9999V10.8H4.09992L5.85992 9Z"
+                      fill="white"
+                    />
+                  </svg>
+
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.99973 14.0361C-5.33333 6.66669 3.99999 -1.33331 7.99973 3.72539C12 -1.33331 21.3333 6.66669 7.99973 14.0361Z"
+                      stroke="white"
+                      stroke-width="1.8"
+                    />
+                  </svg>
+                  <span class="product-action__like">Like</span>
+                </div>
+              </div>
+            </div>
+            <!--End .product-item-->
+            <div class="product-item">
+              <div class="product-image">
+                <img
+                  src="https://picsum.photos/id/11/300/300"
+                  alt=""
+                  class="product__thumbnail"
+                />
+                <span class="product-sale">30%</span>
+              </div>
+              <div class="product-info">
+                <h3 class="product__name">
+                  <a href="" class="product__link">Syltherine</a>
+                </h3>
+                <a href="" class="product__category">Stylish cafe chair</a>
+                <div class="product-price">
+                  <span class="product-price__new">$200</span>
+                  <span class="product-price__old">$300</span>
+                </div>
+              </div>
+              <div class="product-actions">
+                <button class="btn product-action__quickview">
+                  Quick View
+                </button>
+                <button class="btn product-action__addtocart">
+                  Add To Cart
+                </button>
+                <div class="product-actions-more">
+                  <svg
+                    width="12"
+                    height="14"
+                    viewBox="0 0 12 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10 9.66665C9.47467 9.66665 9 9.87331 8.644 10.2046L3.94 7.46665C3.97333 7.31331 4 7.15998 4 6.99998C4 6.83998 3.97333 6.68665 3.94 6.53331L8.64 3.79331C9 4.12665 9.47333 4.33331 10 4.33331C11.1067 4.33331 12 3.43998 12 2.33331C12 1.22665 11.1067 0.333313 10 0.333313C8.89333 0.333313 8 1.22665 8 2.33331C8 2.49331 8.02667 2.64665 8.06 2.79998L3.36 5.53998C3 5.20665 2.52667 4.99998 2 4.99998C0.893333 4.99998 0 5.89331 0 6.99998C0 8.10665 0.893333 8.99998 2 8.99998C2.52667 8.99998 3 8.79331 3.36 8.45998L8.05867 11.2053C8.02112 11.3563 8.00143 11.5111 8 11.6666C8 12.0622 8.1173 12.4489 8.33706 12.7778C8.55682 13.1067 8.86918 13.363 9.23463 13.5144C9.60009 13.6658 10.0022 13.7054 10.3902 13.6282C10.7781 13.551 11.1345 13.3606 11.4142 13.0809C11.6939 12.8012 11.8844 12.4448 11.9616 12.0568C12.0387 11.6689 11.9991 11.2667 11.8478 10.9013C11.6964 10.5358 11.44 10.2235 11.1111 10.0037C10.7822 9.78394 10.3956 9.66665 10 9.66665Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <span class="product-action__share">Share</span>
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.0799 7L11.0799 8L14.5199 4.55L10.9999 1L9.99992 2L11.7999 3.8H1.99992V5.2H11.8199L10.0799 7ZM5.85992 9L4.85992 8L1.41992 11.5L4.90992 15L5.90992 14L4.09992 12.2H13.9999V10.8H4.09992L5.85992 9Z"
+                      fill="white"
+                    />
+                  </svg>
+
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.99973 14.0361C-5.33333 6.66669 3.99999 -1.33331 7.99973 3.72539C12 -1.33331 21.3333 6.66669 7.99973 14.0361Z"
+                      stroke="white"
+                      stroke-width="1.8"
+                    />
+                  </svg>
+                  <span class="product-action__like">Like</span>
+                </div>
+              </div>
+            </div>
+            <!--End .product-item-->
+            <div class="product-item">
+              <div class="product-image">
+                <img
+                  src="https://picsum.photos/id/12/300/300"
+                  alt=""
+                  class="product__thumbnail"
+                />
+                <span class="product-sale">30%</span>
+              </div>
+              <div class="product-info">
+                <h3 class="product__name">
+                  <a href="" class="product__link">Syltherine</a>
+                </h3>
+                <a href="" class="product__category">Stylish cafe chair</a>
+                <div class="product-price">
+                  <span class="product-price__new">$200</span>
+                  <span class="product-price__old">$300</span>
+                </div>
+              </div>
+              <div class="product-actions">
+                <button class="btn product-action__quickview">
+                  Quick View
+                </button>
+                <button class="btn product-action__addtocart">
+                  Add To Cart
+                </button>
+                <div class="product-actions-more">
+                  <svg
+                    width="12"
+                    height="14"
+                    viewBox="0 0 12 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10 9.66665C9.47467 9.66665 9 9.87331 8.644 10.2046L3.94 7.46665C3.97333 7.31331 4 7.15998 4 6.99998C4 6.83998 3.97333 6.68665 3.94 6.53331L8.64 3.79331C9 4.12665 9.47333 4.33331 10 4.33331C11.1067 4.33331 12 3.43998 12 2.33331C12 1.22665 11.1067 0.333313 10 0.333313C8.89333 0.333313 8 1.22665 8 2.33331C8 2.49331 8.02667 2.64665 8.06 2.79998L3.36 5.53998C3 5.20665 2.52667 4.99998 2 4.99998C0.893333 4.99998 0 5.89331 0 6.99998C0 8.10665 0.893333 8.99998 2 8.99998C2.52667 8.99998 3 8.79331 3.36 8.45998L8.05867 11.2053C8.02112 11.3563 8.00143 11.5111 8 11.6666C8 12.0622 8.1173 12.4489 8.33706 12.7778C8.55682 13.1067 8.86918 13.363 9.23463 13.5144C9.60009 13.6658 10.0022 13.7054 10.3902 13.6282C10.7781 13.551 11.1345 13.3606 11.4142 13.0809C11.6939 12.8012 11.8844 12.4448 11.9616 12.0568C12.0387 11.6689 11.9991 11.2667 11.8478 10.9013C11.6964 10.5358 11.44 10.2235 11.1111 10.0037C10.7822 9.78394 10.3956 9.66665 10 9.66665Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <span class="product-action__share">Share</span>
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.0799 7L11.0799 8L14.5199 4.55L10.9999 1L9.99992 2L11.7999 3.8H1.99992V5.2H11.8199L10.0799 7ZM5.85992 9L4.85992 8L1.41992 11.5L4.90992 15L5.90992 14L4.09992 12.2H13.9999V10.8H4.09992L5.85992 9Z"
+                      fill="white"
+                    />
+                  </svg>
+
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.99973 14.0361C-5.33333 6.66669 3.99999 -1.33331 7.99973 3.72539C12 -1.33331 21.3333 6.66669 7.99973 14.0361Z"
+                      stroke="white"
+                      stroke-width="1.8"
+                    />
+                  </svg>
+                  <span class="product-action__like">Like</span>
+                </div>
+              </div>
+            </div>
+            <!--End .product-item-->
+            <div class="product-item">
+              <div class="product-image">
+                <img
+                  src="https://picsum.photos/id/13/300/300"
+                  alt=""
+                  class="product__thumbnail"
+                />
+                <span class="product-sale">30%</span>
+              </div>
+              <div class="product-info">
+                <h3 class="product__name">
+                  <a href="" class="product__link">Syltherine</a>
+                </h3>
+                <a href="" class="product__category">Stylish cafe chair</a>
+                <div class="product-price">
+                  <span class="product-price__new">$200</span>
+                  <span class="product-price__old">$300</span>
+                </div>
+              </div>
+              <div class="product-actions">
+                <button class="btn product-action__quickview">
+                  Quick View
+                </button>
+                <button class="btn product-action__addtocart">
+                  Add To Cart
+                </button>
+                <div class="product-actions-more">
+                  <svg
+                    width="12"
+                    height="14"
+                    viewBox="0 0 12 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10 9.66665C9.47467 9.66665 9 9.87331 8.644 10.2046L3.94 7.46665C3.97333 7.31331 4 7.15998 4 6.99998C4 6.83998 3.97333 6.68665 3.94 6.53331L8.64 3.79331C9 4.12665 9.47333 4.33331 10 4.33331C11.1067 4.33331 12 3.43998 12 2.33331C12 1.22665 11.1067 0.333313 10 0.333313C8.89333 0.333313 8 1.22665 8 2.33331C8 2.49331 8.02667 2.64665 8.06 2.79998L3.36 5.53998C3 5.20665 2.52667 4.99998 2 4.99998C0.893333 4.99998 0 5.89331 0 6.99998C0 8.10665 0.893333 8.99998 2 8.99998C2.52667 8.99998 3 8.79331 3.36 8.45998L8.05867 11.2053C8.02112 11.3563 8.00143 11.5111 8 11.6666C8 12.0622 8.1173 12.4489 8.33706 12.7778C8.55682 13.1067 8.86918 13.363 9.23463 13.5144C9.60009 13.6658 10.0022 13.7054 10.3902 13.6282C10.7781 13.551 11.1345 13.3606 11.4142 13.0809C11.6939 12.8012 11.8844 12.4448 11.9616 12.0568C12.0387 11.6689 11.9991 11.2667 11.8478 10.9013C11.6964 10.5358 11.44 10.2235 11.1111 10.0037C10.7822 9.78394 10.3956 9.66665 10 9.66665Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <span class="product-action__share">Share</span>
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.0799 7L11.0799 8L14.5199 4.55L10.9999 1L9.99992 2L11.7999 3.8H1.99992V5.2H11.8199L10.0799 7ZM5.85992 9L4.85992 8L1.41992 11.5L4.90992 15L5.90992 14L4.09992 12.2H13.9999V10.8H4.09992L5.85992 9Z"
+                      fill="white"
+                    />
+                  </svg>
+
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.99973 14.0361C-5.33333 6.66669 3.99999 -1.33331 7.99973 3.72539C12 -1.33331 21.3333 6.66669 7.99973 14.0361Z"
+                      stroke="white"
+                      stroke-width="1.8"
+                    />
+                  </svg>
+                  <span class="product-action__like">Like</span>
+                </div>
+              </div>
+            </div>
+            <!--End .product-item-->
+          </div>
+        </div>
+      </div>
+    </section>
+   
+   
+    <section class="services">
+      <div class="container-fluid">
+        <div class="service-list">
+          <div class="service-item">
+            <img src="./assets/icons/10.svg" class="service__image" />
+            <div class="service-info">
+              <h4 class="service__name">High Quality</h4>
+              <p class="service__description">crafted from top materials</p>
+            </div>
+          </div>
+          <!--End service-item-->
+          <div class="service-item">
+            <img src="./assets/icons/11.svg" class="service__image" />
+            <div class="service-info">
+              <h4 class="service__name">High Quality</h4>
+              <p class="service__description">crafted from top materials</p>
+            </div>
+          </div>
+          <!--End service-item-->
+          <div class="service-item">
+            <img src="./assets/icons/12.svg" class="service__image" />
+            <div class="service-info">
+              <h4 class="service__name">High Quality</h4>
+              <p class="service__description">crafted from top materials</p>
+            </div>
+          </div>
+          <!--End service-item-->
+          <div class="service-item">
+            <img src="./assets/icons/13.svg" class="service__image" />
+            <div class="service-info">
+              <h4 class="service__name">High Quality</h4>
+              <p class="service__description">crafted from top materials</p>
+            </div>
+          </div>
+          <!--End service-item-->
+        </div>
+      </div>
+    </section>
+
+
+    <!--End .services-->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-list">
+          <div class="footer-item">
+            <img src="./assets/logo.svg" alt="" />
+            <p class="footer__address">
+              400 University Drive Suite 200 Coral Gables, FL 33134 USA
+            </p>
+          </div>
+          <div class="footer-nav">
+            <div class="footer-item">
+              <h2 class="footer__title">Links</h2>
+              <ul class="footer-menu-list">
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Home</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Shop</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Blog</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-item">
+              <h2 class="footer__title">Help</h2>
+              <ul class="footer-menu-list">
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Payment Options</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Returns</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Privacy Policies</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-item">
+            <h2 class="footer__title">Newsletter</h2>
+            <form action="" class="newsletter">
+              <input
+                type="text"
+                class="newsletter__input"
+                placeholder="Enter Your Email Address"
+              />
+              <button class="newsletter__btn">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <p class="copyright">2023 furino. All rights reverved</p>
+      </div>
+    </footer>
+  </body>
+</html>
